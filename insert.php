@@ -8,17 +8,17 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$product = $_POST['Product'];
-$price = $_POST['Price'];
-$discount = $_POST['Discount'];
-$total = $price * $discount
+$Product = $_POST['Product'];
+$Price = $_POST['Price'];
+$Discount = $_POST['Amount'];
+$Total = $Price * $Discount
 
 
-$sql = "INSERT INTO guestbook (Product, Price , Discount, Total) VALUES ('$product', '$price', '$discount', '$total')";
+$sql = "INSERT INTO guestbook(Product, Price , Discount, Total) VALUES ('$Product', '$Price', '$Discount', '$Total')";
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "กรอกรายละเอียดสินค้าเสร็จสิ้น";
+    echo "New record created successfully";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
