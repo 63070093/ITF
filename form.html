@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Comment Form</title>
+  <title>Comment Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<html>
+
+<body>
+  <div class="container-1">
+    <h3>โปรดกรอกรายละเอียดสินค้า</h3>
+  </div>
   <form action = "insert.php" method = "post" id="CommentForm" >
-    Product:<br>
-    <input type="text" name = "Product" id="idProduce" placeholder="Enter product"> <br>
-    Price:<br>
-    <input type="text" name = "Price" id="idPrice" placeholder="Enter price"><br>  
-    Amount:<br>
-    <input type="text" name = "Discount" id="idDiscount" placeholder="Enter Discount"> <br><br>
-    <input type="submit" id="commentBtn">
+    <div class="row">
+      <div class="col-5">
+        <input type="text" class="form-control" name = "Product" id="idProduct" placeholder="Enter Product">
+        </div>
+    </div>
+        <div class="row">
+        </div>
+        <div class="row">
+        <div class="col-5">
+        <input type="text" class="form-control" name = "Price" id="idPrice" placeholder="Enter Price">
+        </div>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col-5">
+        <input type="text" class="form-control" name = "Discount" id="idDiscount" placeholder="Enter Discount">
+      </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form> 
 </body>
 </html>
