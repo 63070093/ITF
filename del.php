@@ -13,7 +13,7 @@ $Price = $_POST['Price'];
 $Discount = $_POST['Discount'];
 
 
-$sql = "DELETE FROM guestbook WHERE id=1";
+$sql = "DELETE FROM guestbook WHERE id=2";
 
 
 if (mysqli_query($conn, $sql)) {
