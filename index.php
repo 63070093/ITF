@@ -42,5 +42,8 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
+  <form action = "form.html" method = "post"
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
 </body>
 </html>
